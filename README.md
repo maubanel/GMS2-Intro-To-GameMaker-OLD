@@ -95,3 +95,21 @@ These are non changing variable names that cannot be changed.  They show up in g
 | vk_down             | Down arrow keyboard button                                                           | if (keyboard_check(vk_down)) y = y-5;                                |
 | c_white             | Draw color of white                                                                  | draw_set_color(c_white);                                             |
 | c_yellow            | Draw color of yellow                                                                 | `draw_set_color(c_yellow);`                                          |
+
+
+## GameMaker Built in Functions
+These are the functions that GameMaker provides that we used in this exercise.
+
+| Built-In Functions                  | Description                                                                                                                                                      | Example                               |
+|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| draw_set_halign(halign)             | Sets text alignment from left, center to right aligned text.                                                                                                     | `draw_set_halign(fa_left);`           |
+| string(real)                        | Casts a real number to a string variable.  Make a number such as `5` become `"5"`.                                                                               | foo = "bee is in mm: " + string(5.5)  |
+| bool(real)                          | Casts a real number to a bool variable. Make a number such as `55` become `true`.                                                                                | foo = bool(55);                       |
+| keyboard_check(key)                 | Returns true or false and takes a key constant character.                                                                                                        | if (keyboard_check(vk_left)) x = x-5; |
+| move_towards_point(x,y,speed)       | Define                                                                                                                                                           | move_towards_point(250,500,5);        |
+| move_wrap(hor,vert,margin)          | Define                                                                                                                                                           | move_wrap(true,true,32);              |
+| draw_text(x,y,string)               | Define                                                                                                                                                           | draw_text(30,50,"You_Win!");          |
+| draw_set_color(color)               | Set color of what you are drawing next in a draw event.                                                                                                          | draw_set_color(c_yellow);             |
+| draw_line(x1,y1,x2,y2)              | Draws a single line with x1, y1 paramters of real numbers representing the room location of the begining of the line.  The x2, y2 represent the end of the line. | draw_line(20,30,25,30);               |
+| draw_rectangle(x1,y1,x2,y2,outline) | Draws a rectangle with the top left and bottom right corner passed.  If the outline is true there is only an outline drawn and if false it is a solid shape.     | draw_rectangle(20,30,25,30,true);     |
+| show_debug_message(string)          | Draws to the console at the bottom of the engine.                                                                                                                |                                       |
