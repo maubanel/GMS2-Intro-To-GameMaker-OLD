@@ -49,6 +49,7 @@ The following programming concepts are raised in FirstLook.yyp.
 
 ## GameMaker Resources
 On the right hand side of the game editor you have a list of all resources that can be added to the game.
+
 | Game Maker Resources | Description                                                                                                                          |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Rooms                | Each level in GameMaker is called a room.  When you create a new project a room called `room0` is provided.                          |
