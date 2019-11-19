@@ -83,7 +83,15 @@ GameMaker objects all share common built in variables.  Here are the ones that a
 ## GameMaker Constants
 These are non changing variable names that cannot be changed.  They show up in gamemaker as a red font.
 
-```diff
-+ this text is highlighted in green
-- this text is highlighted in red
-```
+| GameMaker Constants | Description                                                                                                                                                                            | Example                                                              |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| fa_left             | When drawing text it aligns text to the left hand side of the `x` value given.                                                                                                         | draw_set_halign(fa_left);<br />draw_text(x,y,"Left justified text"); |
+| fa_center           | When drawing text it aligns middle of the text to the center of the `x` value given.                                                                                                   | `y = 150;`                                                           |
+| true                | The angle of rotation of the sprite. 360 degrees represents an entire rotation. 0 is to the right, 90 is pointing up, 180 is pointing in the other direction and 270 is pointing down. | `image_angle = 90;`                                                  |
+| false               | Vertical component of the speed of the player in pixels per frame.                                                                                                                     | `vspeed = 5;`                                                        |
+| vk_left             | Horizontal component of the speed of the player in pixels per frame.                                                                                                                   | `hspeed = 5;`                                                        |
+| vk_right            | This is an angle in degrees of the direction the vehicle is moving in (which could be different than the image_angle)                                                                  | `direction = image_angle`                                            |
+| vk_up               | This is the speed that the object is moving in pixels per frame along the direction axis.                                                                                              | `speed = 7;`                                                         |
+| vk_down             | This is the width the room in pixels.                                                                                                                                                  | `y = room_height /2;`                                                |
+| c_white             | This is the height of the room in pixels.                                                                                                                                              | `x = room_width / 2;`                                                |
+| c_yellow            |                                                                                                                                                                                        |                                                                      |
