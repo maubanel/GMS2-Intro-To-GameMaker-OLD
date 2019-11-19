@@ -4,8 +4,6 @@
     "mvc": "1.1",
     "name": "b071c1c7-0534-45ec-bc1d-2980521f1181",
     "children": [
-        "7a10f2c5-ce53-4111-84a8-7b96fca573e0",
-        "ba72ad05-84b3-49b2-87e7-86c1d493ece3",
         "d6d57912-051a-405e-a12e-05cb931ad73a",
         "e74a848a-c66b-46c3-9287-527cece4aad9",
         "f4759295-6278-49cd-9b22-16b74c93688e",
@@ -14,8 +12,7 @@
         "f454d9dd-ebc2-4047-bd75-beb34b1ad69b",
         "1d818280-2b4d-49f4-9237-d00f218f003e",
         "46557ac7-88ac-45f1-b81c-6985a14788cf",
-        "a7510763-7bfc-414f-a0e6-7e6d10f3fb34",
-        "590b4fff-9d72-4ad7-b03e-4afcc9876ede"
+        "a7510763-7bfc-414f-a0e6-7e6d10f3fb34"
     ],
     "filterType": "GMIncludedFile",
     "folderName": "TutorialContent",

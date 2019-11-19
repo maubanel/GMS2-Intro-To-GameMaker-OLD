@@ -63,31 +63,31 @@
 		Lets start by right clicking <tt><b>obj_circle</b></tt> and select <tt><b>Duplicate</b></tt>.
 
 	<p>
-		<img class="center" src="images/DuplicateCircle.png" alt="Duplicate obj_circle">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/DuplicateCircle.png" alt="Duplicate obj_circle">
 
 	<p>
 		Call it <tt><b>obj_circle_movement</b></tt>.
 
 	<p>
-		<img class="center" src="images/ObjCircleMovement.png" alt="name obj_circle duplicate obj_circle_movement">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/ObjCircleMovement.png" alt="name obj_circle duplicate obj_circle_movement">
 
 	<p>
 		Open the <tt><b>Create</b></tt> event and center the object in the dead center of the room:
 
 	<p>
-		<img class="center" src="images/RepositionCreateCircleMovement.png" alt="Center in room in create event of obj_circle_movement">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/RepositionCreateCircleMovement.png" alt="Center in room in create event of obj_circle_movement">
 		
 	<p>
 		Drag and drop <tt><b>obj_circle_movement</b></tt> to the center of <tt><b>rm_movement</b></tt>.
 
 	<p>
-		<img class="center" src="images/DragCircleToRoom.png" alt="Drag and drop obj_circle_movement to room">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/DragCircleToRoom.png" alt="Drag and drop obj_circle_movement to room">
 	
 	<p>
-		Run the game again by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Now the circle starts in the center of the room:
+		Run the game again by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Now the circle starts in the center of the room:
 	
 	<p>
-		<img class="center" src="images/CircleCenterRoom.png" alt="Run the game circle is in middle of room">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/CircleCenterRoom.png" alt="Run the game circle is in middle of room">
 
 	<p>
 		Press the <tt><b>Add Event</b></tt> button on <tt><b>obj_circle_controller</b></tt> and add a <tt><b>Step | Step</b></tt> event.  Now we will look at <b><a href="gms2tutorials:///ShowHelp?tag=keyboard_check">keyboard_check(key)</a></b> and will subtract the left key from the right key.  Now if you remember <tt><b>keyboard_check(key)</b></tt> returns a boolean which will be 1 if true and 0 if false.  This means if right is pressed it will be 1-0. If left is pressed it will be 0-1.  If both right and left are pressed it will be 1-1.  So this gives us a range of -1 to 1.
@@ -96,31 +96,31 @@
 		Lets prove it.  We will do that with another new function <b><a href="gms2tutorials:///ShowHelp?tag=show_debug_message">show_debug_message(string)</a></b>.  It will print this message in the <tt>Debugger Output</tt> window. 
 		
 	<p>
-		<img class="center" src="images/CircleMovementStepEvent.png" alt="Add show_debug_message to step event">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/CircleMovementStepEvent.png" alt="Add show_debug_message to step event">
 
 	<p>
 		You should have an <tt><b>Output</b></tt> tab in the bottom.  If you don't see it you can select <tt><b>Window | Output</b></tt> and it will appear in the bottom section (you might have to expand it to see it better).
 		
 	<p>
-		<img class="center" src="images/OutputWindow.png" alt="Make sure you have an output window at bottom of ide">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/OutputWindow.png" alt="Make sure you have an output window at bottom of ide">
 
 	<p>
-		Run the game again by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Look at the Output Tab and press the left and right arrow on the keyboard.  The message should print and show either a -1, 0 or 1 as we figured.
+		Run the game again by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Look at the Output Tab and press the left and right arrow on the keyboard.  The message should print and show either a -1, 0 or 1 as we figured.
 	
 	<p>
-		<img class="center" src="images/OutputPrintHorizontal.gif" alt="Run game and look at output in window">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/OutputPrintHorizontal.gif" alt="Run game and look at output in window">
 
 	<p>
 		Repeat the for moving up and down by looking for the object moving up or down.  Remember positive <tt><b>y</b></tt> is moving down so we subtract the up arrow from the down arrow.  Lets print to output this result as well:
 		
 	<p>
-		<img class="center" src="images/VerticalDebugAdded.png" alt="Repeat for moving up and down with debug">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/VerticalDebugAdded.png" alt="Repeat for moving up and down with debug">
 
 	<p>
-		Run the game again by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Look at the Output Tab and press the left, right, up and down arrow on the keyboard.  The message should print and show either a -1, 0 or 1 for both horizontal or vertical movement.
+		Run the game again by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Look at the Output Tab and press the left, right, up and down arrow on the keyboard.  The message should print and show either a -1, 0 or 1 for both horizontal or vertical movement.
 	
 	<p>
-		<img class="center" src="images/HorizontalVerticalMessage.gif" alt="Run game and debug works for up and down">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/HorizontalVerticalMessage.gif" alt="Run game and debug works for up and down">
 
 	<p>
 		Now what is nice about having a range of -1 to 1 is that we can scale it by multiplying it.  If we want to move at a speed of 5 we can multiply this value by 5 and it will range from -5 to 5.  What we will do is set the movement component for each axis.  This is through two variables that comes with every object. <b><a href="gms2tutorials:///ShowHelp?tag=vspeed">vspeed</a></b> and <b><a href="gms2tutorials:///ShowHelp?tag=hspeed">hspeed</a></b>
@@ -137,13 +137,13 @@
 		Delete the two <tt><b>show_debug_message(string)</b></tt> functions and add to both the hspeed and vspeed of the object like so:
 		
 	<p>
-		<img class="center" src="images/AddHspeedAndVspeed.png" alt="Delete debug and add hspeed and vspeed to obj_circle_movement step event">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/AddHspeedAndVspeed.png" alt="Delete debug and add hspeed and vspeed to obj_circle_movement step event">
 
 	<p>
-		Run the game again by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Press the left, right, up and down arrow on the keyboard.  Now the circle moves around the screen.  But woops it can go off screen and disapear.
+		Run the game again by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Press the left, right, up and down arrow on the keyboard.  Now the circle moves around the screen.  But woops it can go off screen and disapear.
 	
 	<p>
-		<img class="center" src="images/MoveCircleOffScreen.gif" alt="Player now moves in game but gets lost off screen">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/MoveCircleOffScreen.gif" alt="Player now moves in game but gets lost off screen">
 
 	<p>
 		Since the entire level is in this one window we can wrap the player when it goes off screen.  GameMaker has built in functions for a lot of very common game issues and this is one of them.  <b><a href="gms2tutorials:///ShowHelp?tag=move_wrap">move_wrap(hor, vert, margin)</a></b>
@@ -155,13 +155,13 @@
 		Add the following to <tt><b>obj_circle_movement: Step</b></tt> event script:
 		
 	<p>
-		<img class="center" src="images/MoveWrapCircle.png" alt="Add move_wrap to obj_circle_movement">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/MoveWrapCircle.png" alt="Add move_wrap to obj_circle_movement">
 
 	<p>
-		Run the game again by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Press the left, right, up and down arrow on the keyboard.  Now go off screen both horizontally and vertically and it reappears on the other side.  Works like a charm!
+		Run the game again by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. Press the left, right, up and down arrow on the keyboard.  Now go off screen both horizontally and vertically and it reappears on the other side.  Works like a charm!
 	
 	<p>
-		<img class="center" src="images/MoveWrapInGame.gif" alt="Player moves and screen wraps">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/MoveWrapInGame.gif" alt="Player moves and screen wraps">
 
 	<p>
 		Now lets have the player character look at the direction it is moving in.  Now we want the player's <tt><b>image_angle</b></tt> to face the direction the player is moving in.  There is a variable called <b><a href="gms2tutorials:///ShowHelp?tag=direction">direction</a></b> that has the angle of the <tt><b>speed</b></tt> of the player (the addition of the <tt><b>hspeed</b></tt> and <tt><b>vspeed</b></tt>).
@@ -174,13 +174,13 @@
 		Add the following to <tt><b>obj_circle_movement: Step</b></tt> event script at the bottom:
 
 	<p>
-		<img class="center" src="images/ImageAngleForPlayerCircle.png" alt="Player looks at direction variable">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/ImageAngleForPlayerCircle.png" alt="Player looks at direction variable">
 
 	<p>
-		Run the game again by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. This is as much as we will do for now.  We have introduced a lot of basic functionality in GameMaker.  Now go make a great game!
+		Run the game again by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt>. This is as much as we will do for now.  We have introduced a lot of basic functionality in GameMaker.  Now go make a great game!
 	
 	<p>
-		<img class="center" src="images/MoveWrapInGame.gif" alt="Player rotates when moving">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/MoveWrapInGame.gif" alt="Player rotates when moving">
 
 </div>
 
