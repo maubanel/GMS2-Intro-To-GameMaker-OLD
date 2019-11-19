@@ -79,3 +79,8 @@ GameMaker objects all share common built in variables.  Here are the ones that a
 | speed                     | This is the speed that the object is moving in pixels per frame along the direction axis.                                                                                                                                         | speed&#160;=&#160;7;               |
 | room_height               | This is the width the room in pixels.                                                                                                                                                                                             | y&#160;=&#160;room_height&#160;/&#160;2;      |
 | room_width                | This is the height of the room in pixels.                                                                                                                                                                                         | x&#160;=&#160;room_width&#160;/&#160;2;      |
+
+## GameMaker Constants
+These are non changing variable names that cannot be changed.  They show up in gamemaker as a red font.
+
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
