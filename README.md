@@ -83,4 +83,7 @@ GameMaker objects all share common built in variables.  Here are the ones that a
 ## GameMaker Constants
 These are non changing variable names that cannot be changed.  They show up in gamemaker as a red font.
 
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
+```diff
++ this text is highlighted in green
+- this text is highlighted in red
+```
