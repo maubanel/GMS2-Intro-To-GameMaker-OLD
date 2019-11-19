@@ -113,3 +113,6 @@ These are the functions that GameMaker provides that we used in this exercise.
 | draw_line(x1,y1,x2,y2)              | Draws a single line with x1, y1 paramters of real numbers representing the room location of the begining of the line.  The x2, y2 represent the end of the line. | draw_line(20,30,25,30);               |
 | draw_rectangle(x1,y1,x2,y2,outline) | Draws a rectangle with the top left and bottom right corner passed.  If the outline is true there is only an outline drawn and if false it is a solid shape.     | draw_rectangle(20,30,25,30,true);     |
 | show_debug_message(string)          | Draws to the console at the bottom of the engine.                                                                                                                |                                       |
+
+## Algorithm(s)
+This demo for controlling the sprite uses an axis scalar algorithm to move the player.
